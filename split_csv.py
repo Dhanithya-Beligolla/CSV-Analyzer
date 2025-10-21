@@ -1,7 +1,7 @@
 import pandas as pd
 import os
 
-def split_csv(input_file="output2.csv", output_dir="output_chunks", chunk_size=3000):
+def split_csv(input_file="output.csv", output_dir="output_chunks", chunk_size=3000):
     # Read the CSV file
     df = pd.read_csv(input_file)
     

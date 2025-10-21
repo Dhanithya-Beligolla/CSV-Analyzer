@@ -416,12 +416,50 @@ BRANCH_MAP = {
     "4d73af01-9f42-f011-877a-6045bd1e9a24": "WENNAPPUWA BRANCH",
 }
 
+TICKET_TYPE_MAP = {
+    "0" : "Complaint",
+    "1" : "Request",
+    "2" : "Inquiry",
+    "3" : "Sales Lead",
+}
+
+TICKET_RECEIVED_THROUGH_MAP = {
+    "0" : "Call Centre",
+    "1" : "Care Centre",
+    "2" : "Secure Mail",
+    "3" : "FCRD",
+    "4" : "CEO Escalation",
+    "5" : "Escalation",
+    "6" : "Social Media",
+    "7" : "Branch",
+    "8" : "Other"
+}
+
+ACTIVE_STATUS_MAP = {
+    "0" : "Closed",
+    "1" : "Active"
+}
+
+CLAIMING_STATUS_MAP = {
+    "0" : "UnClaimed",
+    "1" : "Accepted"
+} 
+
+
+
+
+
+
 TARGET_COLUMNS = {
     "cr1f8_departments": DEPT_MAP,
     "cr1f8_product": PRODUCT_MAP,
     "cr1f8_sla_days": SLA_MAP,
     "cr1f8_complaint_titles": COMPLAINT_TITLES_MAP,
     "cr1f8_branch": BRANCH_MAP,
+    "cr1f8_complain_title": TICKET_TYPE_MAP,
+    "cr1f8_channel" : TICKET_RECEIVED_THROUGH_MAP,
+    "cr1f8_activestatus" : ACTIVE_STATUS_MAP,
+    "cr1f8_claimingstatus" : CLAIMING_STATUS_MAP
 }
 
 def normalize(val: str) -> str:
